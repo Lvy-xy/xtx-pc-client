@@ -1,0 +1,53 @@
+/* 各个页面相同的样式表：头，尾 */
+
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 快捷导航 start */
+.shortcut {
+    width: 100%;
+    height: 52px;
+    background-color: #333333;
+}
+
+.shortcut .wrapper {
+    height: 52px;
+}
+
+.shortcut .wrapper ul {
+    float: right;
+}
+
+.shortcut .wrapper ul li {
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut .wrapper ul li a{
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.shortcut .wrapper ul li a span {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-image: url('../images/sprites.png');
+    background-position: -160px -70px;
+    vertical-align: middle; /* 垂直居中 */
+    margin-right: 8px;
+}
+
+.shortcut .wrapper ul li:first-child a {
+    padding-left: 0;
+}
+
+.shortcut .wrapper ul li:last-child a {
+    border-right: 0;
+}
+/* 快捷导航 end */
