@@ -1,0 +1,254 @@
+/* banner图 start */
+.banner {
+    width: 100%;
+    height: 500px;
+}
+
+.banner .wrapper {
+    position: relative;
+    height: 500px
+}
+
+.banner .wrapper>ul>li {
+    width: 100%;
+    height: 500px;
+}
+
+.banner .aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.banner .aside ul li {
+    width: 100%;
+    height: 50px;
+}
+
+.banner .aside ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 36px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.banner .aside ul li a span {
+    margin-left: 19px;
+    font-size: 14px;
+}
+
+.banner .aside ul li a::after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    display: block;
+    width: 6px;
+    height: 11px;
+    background-image: url('../images/sprites.png');
+    background-position: -80px -110px;
+}
+
+.banner .aside ul li a:hover {
+    background-color: #27bb9a;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 228px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.prev {
+    left: 260px;
+    background-image: url('../images/sprites.png');
+    background-position: 15px -60px;
+}
+
+.next {
+    right: 10px;
+    background-image: url('../images/sprites.png');
+    background-position: -22px -60px;
+}
+
+.banner ol {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 31px;
+    right: 0;
+    width: 990px;
+    height: 10px;
+}
+
+.banner ol>li {
+    width: 10px;
+    height: 10px;
+    margin-right: 24px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.banner ol .current {
+    background-color: #fff;
+}
+
+/* banner图 end */
+
+/* 新鲜好物 start */
+.goods .hd,
+.shengxian .hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 114px;
+}
+
+.goods .hd h2,
+.shengxian .hd h2 {
+    font-size: 29px;
+    color: #333;
+    font-weight: 400;
+}
+
+.goods .hd h2 span {
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+
+.goods .hd>a,
+.shengxian .hd>a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 16px;
+    color: #999;
+    
+}
+
+.goods .hd>a::after,
+.shengxian .hd>a::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 16px;
+    margin-left: 13px;
+    background-image: url('../images/sprites.png');
+    background-position: 0 -108px;
+}
+
+.goods .bd ul {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 8px;
+}
+
+.goods .bd ul li {
+    width: 304px;
+    height: 405px;
+    text-align: center;
+    background-color: #f0f9f4;
+}
+
+
+.goods .bd ul li img {
+    width: 100%;
+}
+
+.goods .bd ul li h3 {
+    margin: 22px 0 15px;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 20px;
+}
+
+.goods .bd ul li div,
+.shengxian .bd .right ul li div {
+    font-size: 17px;
+    color: #9a2e1f;
+}
+
+.goods .bd ul li div span,
+.shengxian .bd .right ul li div span {
+    font-size: 23px;
+    color: #9a2e1f;
+}
+/* 新鲜好物 end */
+
+/* 生鲜 start */
+.shengxian .hd{
+    height: 96px;
+}
+
+.shengxian .hd ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 65px;
+}
+
+.shengxian .hd ul li a {
+    display: block;
+    text-align: center;
+    padding: 2px 7px;
+    margin-right: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.shengxian .hd ul li a:hover {
+    background-color: #27bb9a;
+    color: #fff;
+}
+
+.shengxian .bd {
+    display: flex;
+}
+
+.shengxian .bd .left {
+    flex: none;
+    width: 240px;
+    height: 610px;
+}
+
+.shengxian .bd .left img {
+    width: 100%;
+}
+
+.shengxian .bd .right ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shengxian .bd .right ul li {
+    width: 242px;
+    height: 301px;
+    margin-left: 8px;
+}
+
+.shengxian .bd .right ul li img {
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.shengxian .bd .right ul li .text {
+    font-size: 12px;
+}
+
+.shengxian .bd .right ul li div {
+    margin-left: 7.5%;
+}
+/* 生鲜 end */
