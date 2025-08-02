@@ -64,19 +64,31 @@ init()
 Array.from(doms.dots.children).forEach((item, i) => {
     item.addEventListener('click', () => {
         moveTo(i)
+        resetTimer()
     })
 })
 
 // 左箭头点击事件
 doms.next.addEventListener('click', () => {
     rightNext()
+    resetTimer()
 })
 // 右箭头点击事件
 doms.prev.addEventListener('click', () => {
     leftNext()
+    resetTimer()
 })
 
 // 自动轮播
 var timer = setInterval(() => {
     rightNext()
 }, 3000)
+
+
+// 重置计时器
+function resetTimer() {
+    clearInterval(timer)
+    timer = setInterval(() => {
+        rightNext()
+    }, 3000)
+}
